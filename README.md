@@ -12,7 +12,7 @@ Dengue has emerged as one of the major epidemics in current times. There is some
 ### Data
 The data has been obtained from *drivenData.org*, it was released as a part of their competition *DengAI*.
 In their own words, driven data hosts "data science competitions to save the world". If you are interested in the social impact data can bring about, you must definitely check out their work.
-The basic exploration for this data has been recorded in the ipython notebook **1.EDA.ipynb**.
+The basic exploration for this data has been recorded in the ipython notebook **EDA.ipynb**.
 
 ### Modelling Approaches
 
@@ -24,6 +24,8 @@ As a baseline, linear Regression and it's variants Ridge and Lasso are used from
 Even the more advanced ensemble models like XGBoost did not significantly improve the performance.
 3. **Negative_Binomial_Regression.ipynb** :
 It was observed that the data is highly skewed. When count data is negatively skewed, negative binomial regression has been seen to work well and it did outperform all the other models, the *statsmodels* library was used for this implementation.
+![alt text](https://github.com/SusmeetJain/dengue_prediction/blob/master/images/skewed_distribution.png)
+> Since our labels are so highly skewed, negative binomial regression becomes an ideal choice 
 4. **Arima_models.ipynb** :
 This is an ongoing work of trying to use Arima modeling for predictions.
 
